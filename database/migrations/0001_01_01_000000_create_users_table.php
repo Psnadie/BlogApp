@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('genre', 100);
             $table->string('path', 100)->nullable();
             $table->timestamps();
-            $table->unique['title','entry'];
+            $table->unique(['title','entry']);
         });
 
         Schema::create('users', function (Blueprint $table) {
